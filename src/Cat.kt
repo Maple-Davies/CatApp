@@ -8,9 +8,9 @@ class Cat (val name: String, var age: Int, var weight: Int) {
         }
         return false
     }
-    fun eat() {
+    fun eat(amount: Int) {
         if (weight < 20) {
-            weight ++
+            weight += amount
         } else {
             println("thats a chonky cat maybe dont let it eat anymore until its had a walk")
         }
